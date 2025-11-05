@@ -114,33 +114,6 @@
 #     print()
 
 
-print('hello')
-
-
-
-        
-
-
-
-
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
+# write a program to make a crud operation on list
 
 
