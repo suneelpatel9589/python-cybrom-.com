@@ -118,27 +118,34 @@ while(True):
     ch=int(input("Enter your choice:"))
     if(ch==1):
         print("create")
-        ndata=int(input("Enter the no of data:"))
+        ndata=int(input('enter a number of data'))
         for i in range(ndata):
-            print(f"please enter {i+1} data")
-            data=input("Enter the data:")
+            data =int(input('enter a data'))
             mylist.append(data)
+           
+       
     elif(ch==2):
         print("read")
         print(mylist)
     elif(ch==3):
         print("update")
-        data=input("Enter the data for update:")
+        data=int(input("Enter the data for update:"))
         for i in mylist:
-            if(data==i):
-                print("data match")
+            #  if(data==i):
+            #      print("data match")
+            #      x=mylist.index(data)
+            #      updatedata=int(input("Enter the updated data:"))
+            #      mylist[x]=updatedata
+            #      break
+            #  else: print("not match")
+            try:
                 x=mylist.index(data)
-                updatedata=input("Enter the updated data:")
+                updatedata=int(input("Enter the updated data:"))
                 mylist[x]=updatedata
                 break
-            else:
-                print("not match")
-                
+            except:
+                print('sorry data not found')
+
     elif(ch==4):
         print("delete")
     elif(ch==5):
