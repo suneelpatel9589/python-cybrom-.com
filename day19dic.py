@@ -76,14 +76,40 @@
 #     print()
 #     i+=1
 
+# reverse tringle pattern
+# i = 1
+# while i <= 5:
+#     k=1
+#     while(k<i):
+#         print(' ',end=" ")
+#         k+=1
+#     j=1
+#     while (j<=6-i):
+#         print("*",end="   ")
+#         j += 1
+#     print()
+#     i += 1
 
-i = 1
-while i <= 5:
-    j = 1
-    while j <= i:
-        print(chr(64 + i), end=' ')
-        j += 1
+# square pattern
+# i=1
+# while(i<=5):
+#     j=1
+#     while(j<=5):
+#         print(i,end=" ")
+#         j+=1
+#     print()
+#     i+=1
+
+i=1
+while(i<=5):
+    j=1
+    while(j<=5):
+        if(i==1 or i==5 or j==1 or j==5):
+            print("#", end=" ")
+        elif(i==j):
+            print("#", end=" ")
+        else:
+            print(' ', end=" ")
+        j+=1
     print()
-    i += 1
-
-
+    i+=1
