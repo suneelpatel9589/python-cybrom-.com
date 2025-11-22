@@ -15,7 +15,6 @@
 # popitem()	 -  आखिरी आइटम हटाता है
 # fromkeys()  -  नई dictionary बनाता है
 
-
 # d= {
 #     'key':100,
 #     'key1':200,
@@ -57,7 +56,7 @@
 #         j+=1
 #     print()
 #     i+=1
-
+# # number pattern
 # i=1
 # while i<=5:
 #     j=1
@@ -66,7 +65,7 @@
 #         j+=1
 #     print()
 #     i+=1
-
+# # number tringle pattern
 # i=1
 # while i<=5:
 #     j=1
@@ -76,7 +75,7 @@
 #     print()
 #     i+=1
 
-# reverse tringle pattern
+# # reverse tringle pattern
 # i = 1
 # while i <= 5:
 #     k=1
@@ -100,11 +99,29 @@
 #     print()
 #     i+=1
 
+# hollow square pattern
+# i=1
+# while(i<=5):
+#     j=1
+#     while(j<=5):
+#         if(i==1 or i==5 or j==1 or j==5):
+#             print("#", end=" ")
+#         elif(i==j):
+#             print("#", end=" ")
+#         else:
+#             print(' ', end=" ")
+#         j+=1
+#     print()
+#     i+=1
+
+#  wap to 
 i=1
 while(i<=5):
     j=1
     while(j<=5):
         if(i==1 or i==5 or j==1 or j==5):
+            print("#", end=" ")
+        elif(i==1 or j==6-i):
             print("#", end=" ")
         elif(i==j):
             print("#", end=" ")
@@ -113,3 +130,19 @@ while(i<=5):
         j+=1
     print()
     i+=1
+
+
+i=1
+while(i<=9):
+    j=1
+    while(j<=9):
+        if(i==5 or j==5):
+            print("*" ,end=" ")
+        elif((i==1 and j>=5) or (j==1 and i<=5) or (i==9 and j<=5) or (j==9 and i>=5)):
+            print("*" ,end=" ")
+        else:
+            print(" ", end=" ")
+        j+=1
+    print()
+    i+=1
+

@@ -103,16 +103,8 @@
 #     i+=1
 
 # # Print the pattern
-i =1
-x= 65
-while(i<=5):
-    j=1
-    while(j<=i):
-        print(chr(x),end="")
-        x+=1
-        j+=1
-    print()
 
+print('hello')
 
 
 
