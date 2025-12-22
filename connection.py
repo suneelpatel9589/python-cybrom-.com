@@ -33,7 +33,37 @@ class Dbconn:
         value=[name,email,mobile,rollno]
         self.mycursor.execute(sql,value)
         self.mydb.commit()
-ob=Dbconn()
-ob.Showrecord()
+    def Recorddelete(self):
+        print("Student records")
+        sql="select * from details"
+        self.mycursor.execute(sql)
+        mydata=self.mycursor.fetchall()
+        for i in mydata:
+            print(i)
+        rollno=input("Enter the roll no for delete:")
+        sql1="select * from details where rollno=%s"
+        value1=[rollno]
+        self.mycursor.execute(sql1,value1)
+        mydata=self.mycursor.fetchall()
+        myrow=self.mycursor.rowcount
+        if(myrow>=1):
+            sql="delete from details where rollno=%s"
+            self.mycursor.execute(sql,value1)
+            self.mydb.commit()
+            print("Record deleted successfully......")
+        else:
+            print("please enter valid roll no...")
+        print("Student records")
+        sql="select * from details"
+        self.mycursor.execute(sql)
+        mydata=self.mycursor.fetchall()
+        for i in mydata:
+            print(i)
+
+    
+# ob=Dbconn()
+# ob.Showrecord()
+   
+
 
 
